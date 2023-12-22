@@ -103,7 +103,6 @@ class MeshDrawer {
 		gl.enableVertexAttribArray(this.normalLoc);
         gl.vertexAttribPointer(this.normalLoc, 3, gl.FLOAT, false, 0, 0);
        
-		updateLightPos();
 		this.lightPos = [lightX, lightY, 1];
 		gl.uniform3fv(this.lightPositionUniform, this.lightPos);
 
